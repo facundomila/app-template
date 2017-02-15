@@ -4,10 +4,10 @@ import {Jumbotron, Grid, Row, Col, ListGroup, ListGroupItem} from 'react-bootstr
 class AboutPage extends React.Component {
   render() {
     return (
-      <div className="AboutPage">
+      <div className="VendorPage">
         <Jumbotron>
           <Grid>
-            <h1>About Page</h1>
+            <h1>Vendor Page</h1>
           </Grid>
         </Jumbotron>
         <Grid>

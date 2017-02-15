@@ -10,7 +10,7 @@ class Header extends React.Component {
         <Navbar>
           <Navbar.Header>
             <Navbar.Brand>
-              <IndexLink to="/">Gulp-Browserify Setup</IndexLink>
+              <IndexLink to="/">APP name</IndexLink>
             </Navbar.Brand>
             <Navbar.Toggle />
           </Navbar.Header>
@@ -20,12 +20,12 @@ class Header extends React.Component {
                 <NavItem eventKey={1}>Home</NavItem>
               </IndexLinkContainer>
 
-              <LinkContainer to="/about">
-                <NavItem eventKey={2}>About</NavItem>
+              <LinkContainer to="/vendor">
+                <NavItem eventKey={2}>Vendor</NavItem>
               </LinkContainer>
 
-              <LinkContainer to="/contact">
-                <NavItem eventKey={3}>Contact</NavItem>
+              <LinkContainer to="/owner">
+                <NavItem eventKey={3}>Owner</NavItem>
               </LinkContainer>
             </Nav>
           </Navbar.Collapse>

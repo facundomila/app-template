@@ -4,10 +4,10 @@ import {Jumbotron, Grid, Row, Col, Well} from 'react-bootstrap';
 class ContactPage extends React.Component {
   render() {
     return (
-      <div className="ContactPage">
+      <div className="OwnerPage">
         <Jumbotron>
           <Grid>
-            <h1>Contact Page</h1>
+            <h1>Owner Page</h1>
           </Grid>
         </Jumbotron>
         <Grid>
