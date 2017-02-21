@@ -5,12 +5,13 @@ import {Navbar, Nav, NavItem} from 'react-bootstrap';
 
 class Header extends React.Component {
   render() {
+
     return (
       <div className="Header">
         <Navbar>
           <Navbar.Header>
             <Navbar.Brand>
-              <IndexLink to="/">APP name</IndexLink>
+              <IndexLink to="/">{this.props.children.title}</IndexLink>
             </Navbar.Brand>
             <Navbar.Toggle />
           </Navbar.Header>

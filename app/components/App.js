@@ -2,14 +2,18 @@ import React, {PropTypes} from 'react';
 import Header from './common/Header';
 import Footer from './common/Footer';
 
+import data from '../content-data/static-data.json';
+
 class App extends React.Component {
   render() {
     return (
       <div>
-        <Header />
+        <Header>
+          {data.header}
+        </Header>
         {this.props.children}
         <Footer>
-          This is the children
+          {data.footer}
         </Footer>
       </div>
     );

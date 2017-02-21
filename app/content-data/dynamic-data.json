@@ -1,0 +1,21 @@
+{
+  "header": {
+    "title": "Home Pageasd"
+  },
+  "panel1": {
+    "title": "Boquita",
+    "content": [
+      "Juan Roman Riquelme",
+      "Martin Palermo",
+      "Guillermo Barros Schelotto"
+    ]
+  },
+  "panel2": {
+    "title": "La academia",
+    "content": [
+      "Ruben Capria",
+      "Claudio Lopez",
+      "Claudio Garcia"
+    ]
+  }
+}
