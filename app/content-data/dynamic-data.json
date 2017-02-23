@@ -1,21 +1,33 @@
 {
-  "header": {
-    "title": "Home Pageasd"
-  },
-  "panel1": {
-    "title": "Boquita",
-    "content": [
-      "Juan Roman Riquelme",
-      "Martin Palermo",
-      "Guillermo Barros Schelotto"
-    ]
-  },
-  "panel2": {
-    "title": "La academia",
-    "content": [
-      "Ruben Capria",
-      "Claudio Lopez",
-      "Claudio Garcia"
-    ]
+  "database": {
+    "vendor": {
+      "zonaFranca": {
+        "menu": [
+          {
+            "principal": {
+              "nombre": "",
+              "descripcion": "",
+              "imagen": "",
+              "precio": "",
+              "peso": ""
+            },
+            "saludable": {
+              "nombre": "",
+              "descripcion": "",
+              "imagen": "",
+              "precio": "",
+              "peso": ""
+            },
+            "extra": {
+              "nombre": "",
+              "descripcion": "",
+              "imagen": "",
+              "precio": "",
+              "peso": ""
+            }
+          }
+        ]
+      }
+    }
   }
 }

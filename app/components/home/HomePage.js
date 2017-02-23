@@ -1,4 +1,5 @@
-import React from 'react';
+import _ from 'lodash'
+import React from 'react'
 import {Jumbotron, Grid, Row, Col, Panel} from 'react-bootstrap'
 import * as firebase from 'firebase'
 //import dynamic from '../../content-data/dynamic-data.json';
@@ -10,15 +11,15 @@ const config = {
   databaseURL: 'https://viandas-online.firebaseio.com',
   storageBucket: 'viandas-online.appspot.com',
   messagingSenderId: '1078064900406'
-}
-firebase.initializeApp(config)
+};
+firebase.initializeApp(config);
 
 class HomePage extends React.Component {
 
   constructor() {
-    super()
+    super();
     this.state = {
-      store: ''
+      store: {}
     }
   }
 
@@ -33,12 +34,11 @@ class HomePage extends React.Component {
   }
 
   render() {
-      console.log(this.state.store)
       return (
           <div className="HomePage">
             <Jumbotron>
               <Grid>
-                <h1>{this.state.store.content}</h1>
+                <h1>{_.get(this.state, ['store', 'content', 0])}</h1>
               </Grid>
             </Jumbotron>
             <Grid>
