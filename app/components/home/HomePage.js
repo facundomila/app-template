@@ -1,36 +1,44 @@
 import React from 'react';
 import {Jumbotron, Grid, Row, Col, Panel} from 'react-bootstrap'
 import * as firebase from 'firebase'
-
 //import dynamic from '../../content-data/dynamic-data.json';
 
 // Make sure you swap this out with your Firebase app's config
 const config = {
-  apiKey: "AIzaSyBg7tWSXlOlmdE8TNJbQXu_2McmqR3R_WU",
-  authDomain: "viandas-online.firebaseapp.com",
-  databaseURL: "https://viandas-online.firebaseio.com",
-  storageBucket: "viandas-online.appspot.com",
-  messagingSenderId: "1078064900406"
+  apiKey: 'AIzaSyBg7tWSXlOlmdE8TNJbQXu_2McmqR3R_WU',
+  authDomain: 'viandas-online.firebaseapp.com',
+  databaseURL: 'https://viandas-online.firebaseio.com',
+  storageBucket: 'viandas-online.appspot.com',
+  messagingSenderId: '1078064900406'
 }
-
-const fb = firebase.initializeApp(config)
-    .database()
-    .ref();
-
-var store;
-
-fb.on('value', snapshot => {
-  const store = snapshot.val();
-    console.log(store);
-});
+firebase.initializeApp(config)
 
 class HomePage extends React.Component {
+
+  constructor() {
+    super()
+    this.state = {
+      store: ''
+    }
+  }
+
+  componentWillMount() {
+    const titleRef = firebase.database().ref().child('panel1')
+
+    titleRef.on('value', (snapshot) => {
+      this.setState({
+        store: snapshot.val()
+      })
+    })
+  }
+
   render() {
+      console.log(this.state.store)
       return (
           <div className="HomePage">
             <Jumbotron>
               <Grid>
-                <h1>{}</h1>
+                <h1>{this.state.store.content}</h1>
               </Grid>
             </Jumbotron>
             <Grid>
@@ -53,7 +61,5 @@ class HomePage extends React.Component {
       );
   }
 }
-
-
 
 export default HomePage;
