@@ -19,12 +19,12 @@ class HomePage extends React.Component {
   constructor() {
     super();
     this.state = {
-      store: {}
+      store: ''
     }
   }
 
   componentWillMount() {
-    const titleRef = firebase.database().ref().child('panel1')
+    const titleRef = firebase.database().ref().child('database').child('vendor').child('zonaFranca').child('menu').child('collection')
 
     titleRef.on('value', (snapshot) => {
       this.setState({
@@ -38,7 +38,7 @@ class HomePage extends React.Component {
           <div className="HomePage">
             <Jumbotron>
               <Grid>
-                <h1>{_.get(this.state, ['store', 'content', 0])}</h1>
+                <h1>{_.get(this.state, ['store', 'main', 'name'])}</h1>
               </Grid>
             </Jumbotron>
             <Grid>

@@ -1,7 +1,7 @@
 import React from 'react';
 import {Jumbotron, Grid, Row, Col, ListGroup, ListGroupItem} from 'react-bootstrap';
 
-class AboutPage extends React.Component {
+class VendorPage extends React.Component {
   render() {
     return (
       <div className="VendorPage">
@@ -33,4 +33,4 @@ class AboutPage extends React.Component {
   }
 }
 
-export default AboutPage;
+export default VendorPage;

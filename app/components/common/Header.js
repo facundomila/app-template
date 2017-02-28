@@ -28,6 +28,10 @@ class Header extends React.Component {
               <LinkContainer to="/owner">
                 <NavItem eventKey={3}>Owner</NavItem>
               </LinkContainer>
+
+              <LinkContainer to="/demo">
+                <NavItem eventKey={4}>Demo</NavItem>
+              </LinkContainer>
             </Nav>
           </Navbar.Collapse>
         </Navbar>

@@ -2,31 +2,108 @@
   "database": {
     "vendor": {
       "zonaFranca": {
-        "menu": [
-          {
-            "principal": {
-              "nombre": "",
-              "descripcion": "",
-              "imagen": "",
-              "precio": "",
-              "peso": ""
+        "menu": {
+          "collection": {
+            "main": {
+              "name": "Peperoni Pizza",
+              "description": "This is a main menu",
+              "picture": "",
+              "price": "$60",
+              "details": false
             },
-            "saludable": {
-              "nombre": "",
-              "descripcion": "",
-              "imagen": "",
-              "precio": "",
-              "peso": ""
+            "healthy": {
+              "name": "Salad",
+              "description": "This is a healthy menu",
+              "picture": "",
+              "price": "$50",
+              "show": false
             },
             "extra": {
-              "nombre": "",
-              "descripcion": "",
-              "imagen": "",
-              "precio": "",
-              "peso": ""
+              "name": "Cheeseburguer",
+              "description": "This is an extra menu",
+              "picture": "",
+              "price": "$60",
+              "show": false
             }
-          }
-        ]
+          },
+          "show": [
+            {
+              "2017-03-01": {
+                "main": {
+                  "name": "Peperoni Pizza",
+                  "description": "This is a main menu",
+                  "picture": "",
+                  "price": "$60",
+                  "show": true
+                },
+                "healthy": {
+                  "name": "Salad",
+                  "description": "This is a healthy menu",
+                  "picture": "",
+                  "price": "$50",
+                  "show": true
+                },
+                "extra": {
+                  "name": "Cheeseburguer",
+                  "description": "This is an extra menu",
+                  "picture": "",
+                  "price": "$60",
+                  "show": true
+                }
+              }
+            },
+            {
+              "2017-03-02": {
+                "main": {
+                  "name": "Peperoni Pizza",
+                  "description": "This is a main menu",
+                  "picture": "",
+                  "price": "$60",
+                  "show": true
+                },
+                "healthy": {
+                  "name": "Salad",
+                  "description": "This is a healthy menu",
+                  "picture": "",
+                  "price": "$50",
+                  "show": true
+                },
+                "extra": {
+                  "name": "Cheeseburguer",
+                  "description": "This is an extra menu",
+                  "picture": "",
+                  "price": "$60",
+                  "show": true
+                }
+              }
+            },
+            {
+              "2017-03-03": {
+                "main": {
+                  "name": "Peperoni Pizza",
+                  "description": "This is a main menu",
+                  "picture": "",
+                  "price": "$60",
+                  "show": true
+                },
+                "healthy": {
+                  "name": "Salad",
+                  "description": "This is a healthy menu",
+                  "picture": "",
+                  "price": "$50",
+                  "show": true
+                },
+                "extra": {
+                  "name": "Cheeseburguer",
+                  "description": "This is an extra menu",
+                  "picture": "",
+                  "price": "$60",
+                  "show": true
+                }
+              }
+            }
+          ]
+        }
       }
     }
   }

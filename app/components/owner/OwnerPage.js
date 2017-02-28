@@ -1,7 +1,7 @@
 import React from 'react';
 import {Jumbotron, Grid, Row, Col, Well} from 'react-bootstrap';
 
-class ContactPage extends React.Component {
+class OwnerPage extends React.Component {
   render() {
     return (
       <div className="OwnerPage">
@@ -43,4 +43,4 @@ class ContactPage extends React.Component {
   }
 }
 
-export default ContactPage;
+export default OwnerPage;
