@@ -24,7 +24,7 @@ class HomePage extends React.Component {
   }
 
   componentWillMount() {
-    const titleRef = firebase.database().ref().child('database').child('vendor').child('zonaFranca').child('menu').child('collection')
+    const titleRef = firebase.database().ref().child('database').child('vendor').child('zonaFranca').child('menu').child('collection');
 
     titleRef.on('value', (snapshot) => {
       this.setState({
