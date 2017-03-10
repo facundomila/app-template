@@ -3,29 +3,35 @@
     "vendor": {
       "zonaFranca": {
         "menu": {
-          "collection": {
-            "main": {
-              "name": "Peperoni Pizza",
-              "description": "This is a main menu",
-              "picture": "",
-              "price": "$60",
-              "details": false
+          "collection": [
+            {
+              "main": {
+                "name": "Peperoni Pizza",
+                "description": "This is a main menu",
+                "picture": "",
+                "price": "$60",
+                "details": false
+              }
             },
-            "healthy": {
-              "name": "Salad",
-              "description": "This is a healthy menu",
-              "picture": "",
-              "price": "$50",
-              "show": false
+            {
+              "healthy": {
+                "name": "Salad",
+                "description": "This is a healthy menu",
+                "picture": "",
+                "price": "$50",
+                "show": false
+              }
             },
-            "extra": {
-              "name": "Cheeseburguer",
-              "description": "This is an extra menu",
-              "picture": "",
-              "price": "$60",
-              "show": false
+            {
+              "extra": {
+                "name": "Cheeseburguer",
+                "description": "This is an extra menu",
+                "picture": "",
+                "price": "$60",
+                "show": false
+              }
             }
-          },
+          ],
           "show": [
             {
               "2017-03-01": {

@@ -8,7 +8,7 @@ class DemoPage extends React.Component {
     constructor (props) {
         super (props);
         this.state = {
-            collection: {}
+            collection: ''
         }
     }
 
@@ -23,13 +23,14 @@ class DemoPage extends React.Component {
     }
 
     render() {
-        const collectionData = this.state.collection;
+        const mainMenu = _.get(this.state, ['collection']);
+        console.log(mainMenu);
 
         return (
             <div className="DemoPage">
-                <h1>to avoid: {_.get(this.state, ['collection', 'extra', 'name'])}</h1>
-                <h2>test</h2>
-                <CollectionMenu content={collectionData} />
+                <h1>to avoid: {_.get(this.state, ['collection', [2], 'extra', 'price'])}</h1>
+                <h2>test: </h2>
+                <CollectionMenu content={[1,2,3]} />
             </div>
         );
     }

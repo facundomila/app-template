@@ -4,8 +4,19 @@ import MenuItem from '../common/MenuItem'
 
 class CollectionMenu extends React.Component {
 
-    render () {
-        return (<p>{this.props.content.extra.price}</p>)
+    render() {
+        const content = this.props.content;
+        return (
+            <div>
+                {content.map(this.renderMenuItem)}
+            </div>
+        )
+    }
+
+    renderMenuItem(conte, index) {
+        var x = conte;
+        return <div>{x}</div>
+
     }
 }
 

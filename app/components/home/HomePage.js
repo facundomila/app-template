@@ -34,11 +34,13 @@ class HomePage extends React.Component {
   }
 
   render() {
+      //const menu =(this.state.store[0]);
+
       return (
           <div className="HomePage">
             <Jumbotron>
               <Grid>
-                <h1>{_.get(this.state, ['store', 'main', 'name'])}</h1>
+                <h1>{_.get(this.state, ['store', [0], 'main', 'name'])}</h1>
               </Grid>
             </Jumbotron>
             <Grid>
