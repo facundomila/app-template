@@ -4,11 +4,13 @@ import {Button} from 'react-bootstrap';
 class MenuItem extends React.Component {
 
     render() {
-        console.log(this.props.content);
+        const content = this.props.content;
+        const key = this.props.key;
+        console.log('cccc',content, key)
         return (
             <div className="MenuItem">
-                <h2>{this.props.content.extra.name}</h2>
-                <p>{this.props.content.extra.description}</p>
+                <h2>{content}</h2>
+                <p>{key}</p>
                 <Button bsStyle="primary">Pedir</Button>
             </div>
         );

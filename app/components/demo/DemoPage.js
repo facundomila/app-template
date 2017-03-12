@@ -23,14 +23,29 @@ class DemoPage extends React.Component {
     }
 
     render() {
-        const mainMenu = _.get(this.state, ['collection']);
-        console.log(mainMenu);
+        const MenuList = _.get(this.state, ['collection']);
+        const MenuTest = {
+          todos: [
+            {
+              id: 1,
+              name: 'Meeting at work'
+            },
+            {
+              id: 2,
+              name: 'Bring kids to school'
+            },
+            {
+              id: 3,
+              name: 'Food shopping'
+            }
+          ]
+        };
 
         return (
             <div className="DemoPage">
                 <h1>to avoid: {_.get(this.state, ['collection', [2], 'extra', 'price'])}</h1>
                 <h2>test: </h2>
-                <CollectionMenu content={[1,2,3]} />
+                <CollectionMenu content={MenuTest.todos} />
             </div>
         );
     }
