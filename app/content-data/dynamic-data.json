@@ -5,108 +5,31 @@
         "menu": {
           "collection": [
             {
-              "main": {
-                "name": "Peperoni Pizza",
-                "description": "This is a main menu",
-                "picture": "",
-                "price": "$60",
-                "details": false
-              }
+              "type": "main",
+              "name": "Peperoni Pizza",
+              "description": "This is a main menu",
+              "picture": "",
+              "price": "$60",
+              "details": "no chilly",
+              "show": false
             },
             {
-              "healthy": {
-                "name": "Salad",
-                "description": "This is a healthy menu",
-                "picture": "",
-                "price": "$50",
-                "show": false
-              }
+              "type": "healthy",
+              "name": "Salad",
+              "description": "This is a healthy menu",
+              "picture": "",
+              "price": "$50",
+              "details": "no tomatoe",
+              "show": false
             },
             {
-              "extra": {
-                "name": "Cheeseburguer",
-                "description": "This is an extra menu",
-                "picture": "",
-                "price": "$60",
-                "show": false
-              }
-            }
-          ],
-          "show": [
-            {
-              "2017-03-01": {
-                "main": {
-                  "name": "Peperoni Pizza",
-                  "description": "This is a main menu",
-                  "picture": "",
-                  "price": "$60",
-                  "show": true
-                },
-                "healthy": {
-                  "name": "Salad",
-                  "description": "This is a healthy menu",
-                  "picture": "",
-                  "price": "$50",
-                  "show": true
-                },
-                "extra": {
-                  "name": "Cheeseburguer",
-                  "description": "This is an extra menu",
-                  "picture": "",
-                  "price": "$60",
-                  "show": true
-                }
-              }
-            },
-            {
-              "2017-03-02": {
-                "main": {
-                  "name": "Peperoni Pizza",
-                  "description": "This is a main menu",
-                  "picture": "",
-                  "price": "$60",
-                  "show": true
-                },
-                "healthy": {
-                  "name": "Salad",
-                  "description": "This is a healthy menu",
-                  "picture": "",
-                  "price": "$50",
-                  "show": true
-                },
-                "extra": {
-                  "name": "Cheeseburguer",
-                  "description": "This is an extra menu",
-                  "picture": "",
-                  "price": "$60",
-                  "show": true
-                }
-              }
-            },
-            {
-              "2017-03-03": {
-                "main": {
-                  "name": "Peperoni Pizza",
-                  "description": "This is a main menu",
-                  "picture": "",
-                  "price": "$60",
-                  "show": true
-                },
-                "healthy": {
-                  "name": "Salad",
-                  "description": "This is a healthy menu",
-                  "picture": "",
-                  "price": "$50",
-                  "show": true
-                },
-                "extra": {
-                  "name": "Cheeseburguer",
-                  "description": "This is an extra menu",
-                  "picture": "",
-                  "price": "$60",
-                  "show": true
-                }
-              }
+              "type": "extra",
+              "name": "Cheeseburguer",
+              "description": "This is an extra menu",
+              "picture": "",
+              "price": "$60",
+              "details": "no cheese",
+              "show": false
             }
           ]
         }

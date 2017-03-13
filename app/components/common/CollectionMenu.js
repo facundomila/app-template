@@ -5,19 +5,18 @@ import MenuItem from '../common/MenuItem'
 class CollectionMenu extends React.Component {
 
     render() {
-        //const arratTest = [1,2,3]
-        const MenuTest = this.props.content;
-        console.log('aaaa', MenuTest)
+        const MenuList = this.props.content.collection;
+        const MenuTest = this.props.test.todos;
+        console.log(MenuList, MenuTest)
+
         return (
             <ul className="CollectionMenu">
-                {MenuTest.map(todo => {
-                  return <li todo={todo} key={todo.id}>{todo.name}</li>
+                {MenuList.map(data => {
+                  return <MenuItem content={data} />
                 })}
             </ul>
         )
     }
-
-    
 }
 
 export default CollectionMenu;

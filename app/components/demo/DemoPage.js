@@ -8,22 +8,22 @@ class DemoPage extends React.Component {
     constructor (props) {
         super (props);
         this.state = {
-            collection: ''
+            store: ''
         }
     }
 
     componentWillMount() {
-        const collectionRef = firebase.database().ref().child('database').child('vendor').child('zonaFranca').child('menu').child('collection')
+        const collectionRef = firebase.database().ref().child('database').child('vendor').child('zonaFranca').child('menu')
 
         collectionRef.on('value', (snapshot) => {
             this.setState({
-                collection: snapshot.val()
+                store: snapshot.val()
             })
         })
     }
 
     render() {
-        const MenuList = _.get(this.state, ['collection']);
+        const MenuList = _.get(this.state, ['store']);
         const MenuTest = {
           todos: [
             {
@@ -43,9 +43,9 @@ class DemoPage extends React.Component {
 
         return (
             <div className="DemoPage">
-                <h1>to avoid: {_.get(this.state, ['collection', [2], 'extra', 'price'])}</h1>
+                <h1>to avoid: {_.get(this.state, ['store', 'collection', [2], 'price'])}</h1>
                 <h2>test: </h2>
-                <CollectionMenu content={MenuTest.todos} />
+                <CollectionMenu content={MenuList} test={MenuTest} />
             </div>
         );
     }
